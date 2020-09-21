@@ -1,0 +1,14 @@
+img{
+    width:200px;
+}
+.all-buttons{
+    background-color: rgb(243, 17, 66);
+    border-radius: 50px;
+    border: none;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: 500;
+    margin: 5px;
+
+}
