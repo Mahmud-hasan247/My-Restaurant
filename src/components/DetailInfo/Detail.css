@@ -1,0 +1,11 @@
+.image{
+    border: 1px solid red;
+    width: 100%;
+    height: 500px;
+}
+.detail-container{
+    margin-top:50px;
+}
+.information{
+    padding-top:50px;
+}

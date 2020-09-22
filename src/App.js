@@ -7,11 +7,11 @@ import {
   Link
 } from "react-router-dom";
 import Home from './pages/Home';
-import Detail from './pages/Detail';
 import Login from './pages/Login';
 import PlaceOrder from './pages/PlaceOrder';
 import OrderComplete from './pages/OrderComplete';
 import NotFound from './pages/NotFound';
+import DetailPage from './pages/DetailPage';
 
 function App() {
   return (
@@ -25,7 +25,7 @@ function App() {
             <Home></Home>
           </Route>
           <Route path="/detail">
-            <Detail></Detail>
+            <DetailPage></DetailPage>
           </Route>
           <Route path="/signup">
             <Login></Login>

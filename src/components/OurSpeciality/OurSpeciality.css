@@ -1,0 +1,16 @@
+.cardImage{
+    height: 300px;
+    padding: 10px;
+}
+.crd{
+    border: none;
+    border-radius: 10px;
+}
+.cards{
+    margin:40px 0;
+}
+.icon{
+    width:50px;
+    height:45px;
+    margin-right: 10px;
+}

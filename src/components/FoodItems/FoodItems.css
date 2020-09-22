@@ -1,0 +1,22 @@
+.food-box {
+    padding: 10px 10px;
+    margin: 30px 30px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.food-box:hover{
+    box-shadow:5px 5px 15px rgb(194, 193, 193);
+}
+.boxes{
+    margin-left: 50px;
+}
+.boxes img{
+    margin-left: 30px;
+}
+.catagories{
+    margin-left: 100px;
+}
+.headings{
+    margin-left:230px;
+    margin-top: 20px;
+}
