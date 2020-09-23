@@ -7,11 +7,11 @@ import {
   Link
 } from "react-router-dom";
 import Home from './pages/Home';
-import Login from './pages/Login';
-import PlaceOrder from './pages/PlaceOrder';
 import OrderComplete from './pages/OrderComplete';
 import NotFound from './pages/NotFound';
 import DetailPage from './pages/DetailPage';
+import LoginPage from './pages/LoginPage';
+import PlaceOrderPage from './pages/PlaceOrderPage';
 
 function App() {
   return (
@@ -28,13 +28,13 @@ function App() {
             <DetailPage></DetailPage>
           </Route>
           <Route path="/signup">
-            <Login></Login>
+            <LoginPage></LoginPage>
           </Route>
           <Route path="/login">
-            <Login></Login>
+            <LoginPage></LoginPage>
           </Route>
           <Route path="/placeOrder">
-            <PlaceOrder></PlaceOrder>
+            <PlaceOrderPage></PlaceOrderPage>
           </Route>
           <Route path="/orderComplete">
             <OrderComplete></OrderComplete>

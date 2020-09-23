@@ -1,0 +1,26 @@
+.form{
+    margin-left:530px;
+    margin-top:100px;
+}
+.input{
+    border: none;
+    border-radius:5px;
+    background-color: lightGray;
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+}
+.submit{
+    background-color:rgb(243, 17, 66);
+    color: white;
+    font-weight:600;
+}
+.signIn{
+    margin-top:20px;
+    margin-left:10px;
+    color:black;
+}
+#span{
+    color:rgb(243, 17, 66);
+    font-weight:600;
+}

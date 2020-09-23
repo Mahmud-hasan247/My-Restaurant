@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './Detail.css';
 import foods from '../../Data/Data';
+import More from '../More/More';
 
 const Detail = () => {
     const [amount, setAmount] = useState(0);
@@ -15,8 +16,6 @@ const Detail = () => {
 
     const {name} = useParams();
     const getInfo = foods.find(data => data.name === name);
-
-    
     return (
         <>
             <div className="container detail-container">
@@ -26,18 +25,18 @@ const Detail = () => {
                     <p>vero molestias, id dicta velit a consequatur. Rem sequi unde blanditiis, corporis rerum tempore sint repellat dolore esse eveniet laborum assumenda distinctio, culpa omnis sit sunt veritatis? Pariatur iure doloribus in odit corporis itaque ratione quis, quos placeat. Quas debitis odio error laudantium minus illum, soluta illo!</p>
                     <br/>
                     <div className="d-flex">
-                        <h4>Price: $49</h4>
+                        <h4>${getInfo.price}</h4>
                         <div className="plus-minus d-flex">
                             <h3 className='p-m' onClick={Minus}>-</h3>
                             <h5 className='p-m amount'>{amount}</h5>
                             <h3 className='p-m' onClick={Plus}>+</h3>
                         </div>
                     </div>
-                    {/* <br/> */}
                     <button className='all-buttons'>add</button>
+                    <More></More>
                 </div>
                 <div className="col-6 image">
-                    <h1>hare is image</h1>
+                    <img src={getInfo.image} alt=""/>
                 </div>
             </div>
             </div>

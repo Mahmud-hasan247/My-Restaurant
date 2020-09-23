@@ -1,0 +1,23 @@
+.input-box{
+    border: none;
+    border-radius:5px;
+    background-color: lightGray;
+    width: 350px;
+    height: 45px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.submit{
+    background-color:rgb(243, 17, 66);
+    color: white;
+    font-weight:600;
+}
+h4{
+    border-bottom:1px solid gray;
+    width: 350px;
+    padding-bottom:5px;
+    margin-left: 50px;
+}
+.full-page{
+    margin-top:100px;
+}
