@@ -9,3 +9,16 @@
 .information{
     padding-top:50px;
 }
+.plus-minus{
+    width:100px;
+    border: 1px solid red;
+    border-radius:50px;
+    margin-left: 50px;
+}
+.p-m{
+    margin-left:15px;
+    cursor: pointer;
+}
+.amount{
+    padding-top: 5px;
+}

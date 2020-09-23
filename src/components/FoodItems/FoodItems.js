@@ -1,20 +1,39 @@
 import React, { useState } from 'react';
 import './FoodItems.css';
 import foods from '../../Data/Data';
+import { useHistory } from 'react-router-dom';
 
 const FoodItems = () => {
-    const [newFood, setNewFood] = useState(foods);
+    const [category, setCategory] = useState('Lunch');
+
+    const FoodItems = foods.filter(food => food.category === category)
+
+    const history = useHistory()
+    const showDetails = (name) => {
+        history.push(`/detail/${name}`)
+    }
+
+    const Dinner = () => {
+        setCategory('Dinner');
+    }
+    const Breakfast = () => {
+        setCategory('Breakfast');
+    }
+    const Lunch = () => {
+        setCategory('Lunch');
+    }
+
     return (
         <>
             <div className="container ">
                 <ul className="d-flex headings">
-                    <h6 className='catagories'>Breakfast</h6>
-                    <h6 className='catagories'>Lunch</h6>
-                    <h6 className='catagories'>Dinner</h6>
+                    <h6 className='catagories' onClick={Breakfast}>Breakfast</h6>
+                    <h6 className='catagories' onClick={Lunch}>Lunch</h6>
+                    <h6 className='catagories' onClick={Dinner}>Dinner</h6>
                 </ul>
                 <div className="row ">
                     {
-                        newFood.map(data => <div className="col-3 food-box boxes">
+                        FoodItems.map(data => <div onClick={() => showDetails(data.name)} className="col-3 food-box boxes">
                         <img src={data.image} alt=""/>
                         <h5 className="text-center">{data.name}</h5>
                         <p className="text-center">{data.description}</p>

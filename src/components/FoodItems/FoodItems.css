@@ -15,6 +15,10 @@
 }
 .catagories{
     margin-left: 100px;
+    cursor: pointer;
+}
+.catagories:hover{
+    color:rgb(243, 17, 66);
 }
 .headings{
     margin-left:230px;
