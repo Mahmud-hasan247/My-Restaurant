@@ -1,4 +1,5 @@
 import React from 'react';
+import OrderedItems from '../OrderedItems/OrderedItems';
 import './PlaceOrder.css';
 
 const PlaceOrder = () => {
@@ -17,8 +18,26 @@ const PlaceOrder = () => {
                             <input className='input-box submit' type="submit" value='Save & Continue'></input> 
                         </form>
                     </div>
-                    <div className="col-6">
-                        
+                    <div className="col-6 order-detail" style={{paddingLeft:'200px'}}>
+                        <small>From <span id="restaura">Gulshan Plaza Restaura GPR</span> </small><br/>
+                        <small>Arriving in 20-30 min</small><br/>
+                        <small>107 Road no 8</small><br/>
+                        <OrderedItems></OrderedItems>
+                        <div className="d-flex payment-detail">
+                            <div className="">
+                                <small>SubTotal:</small><br/>
+                                <small>Tax:</small><br/>
+                                <small>Delivery fee:</small><br/>
+                                <h6>Total:</h6>
+                            </div>
+                            <div className="amounts">
+                                <small>$320</small><br/>
+                                <small>$5</small><br/>
+                                <small>$10</small><br/>
+                                <h6>$335</h6>
+                            </div>
+                        </div>
+                        <input className='place-order' type="submit" value='Place Order'></input>
                     </div>
                 </div>
             </div>

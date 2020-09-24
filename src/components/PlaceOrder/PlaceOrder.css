@@ -2,7 +2,7 @@
     border: none;
     border-radius:5px;
     background-color: lightGray;
-    width: 350px;
+    width: 400px;
     height: 45px;
     margin-top: 30px;
     margin-left: 50px;
@@ -14,10 +14,31 @@
 }
 h4{
     border-bottom:1px solid gray;
-    width: 350px;
+    width: 400px;
     padding-bottom:5px;
     margin-left: 50px;
 }
 .full-page{
     margin-top:100px;
+}
+.place-order{
+    border: none;
+    border-radius:5px;
+    background-color:rgb(243, 17, 66);
+    color: white;
+    font-weight:600;
+    width: 250px;
+    height: 45px;
+}
+.order-detail small{
+    color: black;
+}
+.amounts{
+    margin-left: 100px;
+}
+#restaura{
+    font-weight: bold;
+}
+.payment-detail{
+    margin-top: 30px;
 }
