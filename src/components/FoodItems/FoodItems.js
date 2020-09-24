@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './FoodItems.css';
 import foods from '../../Data/Data';
-import { useHistory } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const FoodItems = () => {
     const [category, setCategory] = useState('Lunch');
@@ -42,6 +42,9 @@ const FoodItems = () => {
                     }
                 </div>
             </div>
+            <Link to="/placeOrder">
+                <button id='checkOut'>CheckOut Your Food</button>
+            </Link>
         </>
     );
 };
